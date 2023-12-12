@@ -4,10 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link>
+    <title>JLaboratories</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
-<body>
+<body class="bg-black muli">
+
+    <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
+        <div class="flex justify-between">
+            <a href="#" class="flex items-center p-2 mr-4 no-underline">
+                <img class=" w-auto" src="assets/images/logonoche.png" />
+            </a>
+            <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
+                class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+                <i data-feather="menu"></i>
+            </a>
+        </div>
+        <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
+            <a href="#home" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Home</a>
+            <a href="#features" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Features</a>
+            <a href="#pricing" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Pricing</a>
+            <a href="#blog" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Blog</a>
+            <a href="#" class="button bg-white black fw-600 no-underline mx-5">Register</a>
+        </div>
+    </nav>
+
 
 </body>
+
 </html>
