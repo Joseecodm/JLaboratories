@@ -85,6 +85,35 @@
         </div>
     </section>
 
+
+
+    <!-- Volver arriba boton -->
+    
+    <a href="#" id="scrollToTopBtn" class="button bg-indigo-lightest-10 white no-underline bottom-5 right-5 ease-300 hover-opacity-100">
+    Volver arriba
+    </a>
+
+    <script>
+        // JavaScript para controlar el comportamiento del botón
+        document.addEventListener('DOMContentLoaded', function () {
+        var scrollToTopButton = document.getElementById('scrollToTopBtn');
+
+        // Muestra u oculta el botón según la posición de desplazamiento
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        };
+
+            // Desplaza suavemente hacia arriba cuando se hace clic en el botón
+            scrollToTopButton.addEventListener('click', function () {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para otros navegadores
+            });
+        });
+    </script>
 </body>
 
 </html>
