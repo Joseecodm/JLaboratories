@@ -94,11 +94,10 @@
     </a>
 
     <script>
-        // JavaScript para controlar el comportamiento del botón
+      
         document.addEventListener('DOMContentLoaded', function () {
         var scrollToTopButton = document.getElementById('scrollToTopBtn');
 
-        // Muestra u oculta el botón según la posición de desplazamiento
         window.onscroll = function () {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 scrollToTopButton.style.display = 'block';
@@ -106,8 +105,6 @@
                 scrollToTopButton.style.display = 'none';
             }
         };
-
-            // Desplaza suavemente hacia arriba cuando se hace clic en el botón
             scrollToTopButton.addEventListener('click', function () {
             document.body.scrollTop = 0; // Para Safari
             document.documentElement.scrollTop = 0; // Para otros navegadores
